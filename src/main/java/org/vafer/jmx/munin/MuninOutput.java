@@ -24,7 +24,7 @@ public final class MuninOutput implements Output {
         StringBuilder sb = new StringBuilder();
         sb.append(beanName.getDomain());
         sb.append('.');
-        sb.append(beanName.getKeyProperty("type"));
+        sb.append(beanName.getKeyPropertyListString());
         return sb.toString();
     }
     

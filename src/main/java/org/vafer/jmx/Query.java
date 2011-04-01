@@ -35,7 +35,7 @@ public final class Query {
                         final String attributeName = attribute.getName();
                         try {
                             output.output(
-                                    mbean.getObjectName(),
+                                    mbeanName,
                                     attributeName,
                                     connection.getAttribute(mbeanName, attributeName)
                                     );
